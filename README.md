@@ -2,4 +2,4 @@
 
 em desenvolvimento 🏗️
 
-> este projeto está sendo desenvolvimento com base nas aulas do curso Spring Boot 3 da Alura.
+> este projeto está sendo desenvolvimento com base nas aulas do curso Spring Boot 3 da Alura 😃
