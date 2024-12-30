@@ -7,6 +7,4 @@ public record DadosCadastroMedico(String nome,
                                   String crm,
                                   Especialidade especialidade,
                                   DadosEndereco endereco) {
-
-    //tera mais coisas.s
 }
