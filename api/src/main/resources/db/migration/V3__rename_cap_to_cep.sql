@@ -1,0 +1,1 @@
+ALTER TABLE medicos CHANGE COLUMN cap cep VARCHAR(9);

@@ -1,0 +1,1 @@
+ALTER TABLE medicos CHANGE COLUMN logradoura logradouro VARCHAR(100);
