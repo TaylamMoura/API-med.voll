@@ -10,7 +10,7 @@ import med.voll.api.endereco.Endereco;
 @Table(name = "medicos")
 @Entity(name = "Medico")
 
-// NOTAÇÕES DO NOMBOK
+// NOTAÇÕES DO LOMBOK
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
@@ -31,6 +31,31 @@ public class Medico {
     @Embedded
     private Endereco endereco;
 
+    public Medico(){}
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public String getCrm() {
+        return crm;
+    }
+
+    public Especialidade getEspecialidade() {
+        return especialidade;
+    }
+
+    public Endereco getEndereco() {
+        return endereco;
+    }
 
     public Medico(DadosCadastroMedico dados) {
         this.nome = dados.nome();
