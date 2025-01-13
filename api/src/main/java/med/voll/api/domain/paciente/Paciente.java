@@ -20,11 +20,16 @@ public class Paciente {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Getter
     private String nome;
+    @Getter
     private String email;
+    @Getter
     private String telefone;
+    @Getter
     private String cpf;
 
+    @Getter
     @Embedded
     private Endereco endereco;
 
@@ -53,8 +58,8 @@ public class Paciente {
         return cpf;
     }
 
-    public Endereco getEndereco() {
-        return endereco;
+    public Boolean getAtivo() {
+        return ativo;
     }
 
     public Paciente(DadosCadastroPaciente dados) {
@@ -81,4 +86,10 @@ public class Paciente {
     public void excluir() {
         this.ativo = false;
     }
+
+    public Endereco getEndereco(){
+        return endereco;
+    }
 }
+
+
