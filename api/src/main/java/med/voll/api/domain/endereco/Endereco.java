@@ -20,7 +20,6 @@ public class Endereco {
     private String uf;
 
     public Endereco(){
-
     }
 
     public Endereco(DadosEndereco dados) {
