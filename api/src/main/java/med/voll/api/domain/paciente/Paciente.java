@@ -18,6 +18,7 @@ import med.voll.api.domain.endereco.Endereco;
 public class Paciente {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Getter
     private Long id;
 
     @Getter
