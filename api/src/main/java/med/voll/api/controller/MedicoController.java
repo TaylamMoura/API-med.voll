@@ -1,6 +1,7 @@
 package med.voll.api.controller;
 
 
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.validation.Valid;
 import med.voll.api.domain.medico.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +16,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 @RestController     //o java sabe que essa classe é um controller
 @RequestMapping("medicos")     // que esta mapeando a url /medicos
+@SecurityRequirement(name = "bearer-key")
 
 public class MedicoController {
 
