@@ -34,3 +34,5 @@ build/
 
 application.properties
 FlywayMigration.java
+api-0.0.1-SNAPSHOT.jar
+api-0.0.1-SNAPSHOT.jar.original
