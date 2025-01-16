@@ -13,7 +13,7 @@ import med.voll.api.domain.endereco.Endereco;
 
 // NOTAÇÕES DO LOMBOK
 @Getter
-@NoArgsConstructor
+//@NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(of = "id")
 public class Medico {
