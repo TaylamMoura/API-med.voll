@@ -28,11 +28,14 @@ public class SecurityConfigurations {
                         .sessionManagement(sm -> sm.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                         .authorizeHttpRequests(req -> {
                             req.requestMatchers("/login").permitAll();
+                            req.requestMatchers("/v3/api-docs/**", "/swagger-ui.html", "/swagger-ui/**").permitAll();
                             req.anyRequest().authenticated();
                         })
                         .addFilterBefore(securityFilter, UsernamePasswordAuthenticationFilter.class) //chama nosso filtro 1º, e depois o Username(que é do spring)
                         .build();
     }
+  //  http://server:port/context-path/v3/api-docs
+   // http://server:port/context-path/swagger-ui.html
 
     @Bean
     public AuthenticationManager authenticationManager(AuthenticationConfiguration configuration) throws Exception{
